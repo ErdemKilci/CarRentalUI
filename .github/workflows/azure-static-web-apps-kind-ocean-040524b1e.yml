@@ -16,6 +16,6 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "CarRentalUI"   # or "." if .csproj is in root
+          app_location: "."   # or "." if .csproj is in root
           api_location: ""             # no separate Azure SWA API
           output_location: "build/wwwroot"

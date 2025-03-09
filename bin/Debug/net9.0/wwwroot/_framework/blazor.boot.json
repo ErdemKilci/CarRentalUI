@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CarRentalUI",
   "resources": {
-    "hash": "sha256-IRsjQDCio1pZuGVBbPpq2c16hmItdMvXkwBbaB+nsBc=",
+    "hash": "sha256-F05joUGjnCfjFxKVQ+ereBSkKXISsAz6MlhAdSky5pE=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.esv38zo127.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.cwj0bpb71v.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -204,8 +204,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "CarRentalUI.noiurdznie.wasm": "CarRentalUI.wasm",
-      "CarRentalUI.8xzuyjnr69.pdb": "CarRentalUI.pdb"
+      "CarRentalUI.zltyhrv25q.wasm": "CarRentalUI.wasm",
+      "CarRentalUI.37cfpyqsed.pdb": "CarRentalUI.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.8bti36lthm.js": "sha256-HFADmT26AarHu4tMjFaTPxINmQjBJGtdPN+CKjtNMFE="
@@ -418,10 +418,10 @@
       "WindowsBase.tuf34ieu7y.wasm": "sha256-Bd+l972cOS1eVeLzrQNlgD6LPWV1QXBSzJhv8Tx1WGI=",
       "mscorlib.5q5u0swn6q.wasm": "sha256-g9cI1sECkF7bxMqOSB+W0a4utdDsqTrqZzyiAEeA65g=",
       "netstandard.w8gk1pigg1.wasm": "sha256-QFR5QNPfvyZTexW3IA/AFx6ZmIF/TecvOUsSK4gM4po=",
-      "CarRentalUI.noiurdznie.wasm": "sha256-6QY762MYIOfBIxarlPEzA3POHO77jGlITn13Ziwt4NY="
+      "CarRentalUI.zltyhrv25q.wasm": "sha256-ZzeYYltGsjNuNCuu1KVo+sqX5WkXl+v24SrvcMtXerE="
     },
     "pdb": {
-      "CarRentalUI.8xzuyjnr69.pdb": "sha256-pDCj1Dfd3WzfutroIzpAE6MwQ+fhHU4j1rS6aHUuwj8="
+      "CarRentalUI.37cfpyqsed.pdb": "sha256-fwxuhpLYB3gZ7JsJpWLW6EyqbgjKck/fet7+2JP0Sa0="
     }
   },
   "cacheBootResources": true,

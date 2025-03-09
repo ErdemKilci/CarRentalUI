@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WWSnQDc3E/z9IWLkY6AVIjFUsM/Euyeu5V4VmFzY/fA=",
+  "Hash": "S6EgGtGZYMq0t0vIXHwFdo0/CUMENE0YRZXhVfoxTKE=",
   "Source": "CarRentalUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "w8d5e5grsp",
-      "Integrity": "sGs+/9NWvYTImnSI72P2Tk9MmRd9Oah/wFkWCxN/7jk=",
+      "Fingerprint": "4mk3ub4p2n",
+      "Integrity": "HPXG276/T+s7qGuKrdn6Kql9f8tSKdoq+P0swliBGxk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net9.0/blazor.boot.json"
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "8xzuyjnr69",
-      "Integrity": "pDCj1Dfd3WzfutroIzpAE6MwQ+fhHU4j1rS6aHUuwj8=",
+      "Fingerprint": "37cfpyqsed",
+      "Integrity": "fwxuhpLYB3gZ7JsJpWLW6EyqbgjKck/fet7+2JP0Sa0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj/Debug/net9.0/CarRentalUI.pdb"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "noiurdznie",
-      "Integrity": "6QY762MYIOfBIxarlPEzA3POHO77jGlITn13Ziwt4NY=",
+      "Fingerprint": "zltyhrv25q",
+      "Integrity": "ZzeYYltGsjNuNCuu1KVo+sqX5WkXl+v24SrvcMtXerE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/webcil/CarRentalUI.wasm"
@@ -5330,12 +5330,12 @@
       "OriginalItemSpec": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/System.Reflection.TypeExtensions.wasm"
     },
     {
-      "Identity": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/6ml0hgllle-8xzuyjnr69.gz",
+      "Identity": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/6ml0hgllle-37cfpyqsed.gz",
       "SourceId": "CarRentalUI",
       "SourceType": "Computed",
       "ContentRoot": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/",
       "BasePath": "/",
-      "RelativePath": "_framework/CarRentalUI#[.{fingerprint=8xzuyjnr69}]!.pdb.gz",
+      "RelativePath": "_framework/CarRentalUI#[.{fingerprint=37cfpyqsed}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5344,8 +5344,8 @@
       "RelatedAsset": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/CarRentalUI.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "16ljzv50xw",
-      "Integrity": "6SA1PtJpw/FDZ95wn5jP57JrFBF5wuNnyaMSDCyYXjA=",
+      "Fingerprint": "an8awn784w",
+      "Integrity": "RpZfSSkwPnJBCUHp6P964HcbTcb60kSO2Dgo1pAoHs4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/CarRentalUI.pdb"
@@ -5687,12 +5687,12 @@
       "OriginalItemSpec": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/System.Net.WebSockets.Client.wasm"
     },
     {
-      "Identity": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/9lq8wfc9ph-noiurdznie.gz",
+      "Identity": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/9lq8wfc9ph-zltyhrv25q.gz",
       "SourceId": "CarRentalUI",
       "SourceType": "Computed",
       "ContentRoot": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/",
       "BasePath": "/",
-      "RelativePath": "_framework/CarRentalUI#[.{fingerprint=noiurdznie}]!.wasm.gz",
+      "RelativePath": "_framework/CarRentalUI#[.{fingerprint=zltyhrv25q}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5701,8 +5701,8 @@
       "RelatedAsset": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/CarRentalUI.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "33ck3855fg",
-      "Integrity": "0fKNG3NQFkDl1qdxorCN4lpB84CN9bz/SRzA3hfftVQ=",
+      "Fingerprint": "ehkwl086ev",
+      "Integrity": "smSp8f2OLKlrs+o3Ns5KNlvsGaVh9YhDxbBqfeiH4vk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/CarRentalUI.wasm"
@@ -7199,7 +7199,7 @@
       "OriginalItemSpec": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/dotnet.native.wasm"
     },
     {
-      "Identity": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/j9jiml3nzn-w8d5e5grsp.gz",
+      "Identity": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/j9jiml3nzn-4mk3ub4p2n.gz",
       "SourceId": "CarRentalUI",
       "SourceType": "Computed",
       "ContentRoot": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/",
@@ -7213,8 +7213,8 @@
       "RelatedAsset": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ckecqorzxb",
-      "Integrity": "vP4oo9laJdo7e1SjjPOOKJYP08TirH9qLIu1sIBKSQY=",
+      "Fingerprint": "vo1lgngdl8",
+      "Integrity": "zwe9QO4IIcA1F4IumHrxyissbQ6OgQvqTo8N0vKA0pw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json"
@@ -11279,11 +11279,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sGs+/9NWvYTImnSI72P2Tk9MmRd9Oah/wFkWCxN/7jk=\""
+          "Value": "\"HPXG276/T+s7qGuKrdn6Kql9f8tSKdoq+P0swliBGxk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
+          "Value": "Sun, 09 Mar 2025 14:52:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11293,13 +11293,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sGs+/9NWvYTImnSI72P2Tk9MmRd9Oah/wFkWCxN/7jk="
+          "Value": "sha256-HPXG276/T+s7qGuKrdn6Kql9f8tSKdoq+P0swliBGxk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/j9jiml3nzn-w8d5e5grsp.gz",
+      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/j9jiml3nzn-4mk3ub4p2n.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -11318,11 +11318,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vP4oo9laJdo7e1SjjPOOKJYP08TirH9qLIu1sIBKSQY=\""
+          "Value": "\"zwe9QO4IIcA1F4IumHrxyissbQ6OgQvqTo8N0vKA0pw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:27:31 GMT"
+          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11342,19 +11342,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"sGs+/9NWvYTImnSI72P2Tk9MmRd9Oah/wFkWCxN/7jk=\""
+          "Value": "W/\"HPXG276/T+s7qGuKrdn6Kql9f8tSKdoq+P0swliBGxk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sGs+/9NWvYTImnSI72P2Tk9MmRd9Oah/wFkWCxN/7jk="
+          "Value": "sha256-HPXG276/T+s7qGuKrdn6Kql9f8tSKdoq+P0swliBGxk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/j9jiml3nzn-w8d5e5grsp.gz",
+      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/j9jiml3nzn-4mk3ub4p2n.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11371,11 +11371,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vP4oo9laJdo7e1SjjPOOKJYP08TirH9qLIu1sIBKSQY=\""
+          "Value": "\"zwe9QO4IIcA1F4IumHrxyissbQ6OgQvqTo8N0vKA0pw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:27:31 GMT"
+          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11393,7 +11393,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vP4oo9laJdo7e1SjjPOOKJYP08TirH9qLIu1sIBKSQY="
+          "Value": "sha256-zwe9QO4IIcA1F4IumHrxyissbQ6OgQvqTo8N0vKA0pw="
         }
       ]
     },
@@ -11535,7 +11535,7 @@
       ]
     },
     {
-      "Route": "_framework/CarRentalUI.8xzuyjnr69.pdb",
+      "Route": "_framework/CarRentalUI.37cfpyqsed.pdb",
       "AssetFile": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/CarRentalUI.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11545,7 +11545,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "40848"
+          "Value": "41708"
         },
         {
           "Name": "Content-Type",
@@ -11553,11 +11553,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pDCj1Dfd3WzfutroIzpAE6MwQ+fhHU4j1rS6aHUuwj8=\""
+          "Value": "\"fwxuhpLYB3gZ7JsJpWLW6EyqbgjKck/fet7+2JP0Sa0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
+          "Value": "Sun, 09 Mar 2025 14:52:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11567,7 +11567,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8xzuyjnr69"
+          "Value": "37cfpyqsed"
         },
         {
           "Name": "label",
@@ -11575,18 +11575,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pDCj1Dfd3WzfutroIzpAE6MwQ+fhHU4j1rS6aHUuwj8="
+          "Value": "sha256-fwxuhpLYB3gZ7JsJpWLW6EyqbgjKck/fet7+2JP0Sa0="
         }
       ]
     },
     {
-      "Route": "_framework/CarRentalUI.8xzuyjnr69.pdb",
-      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/6ml0hgllle-8xzuyjnr69.gz",
+      "Route": "_framework/CarRentalUI.37cfpyqsed.pdb",
+      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/6ml0hgllle-37cfpyqsed.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000031346980"
+          "Quality": "0.000030589459"
         }
       ],
       "ResponseHeaders": [
@@ -11596,15 +11596,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "31900"
+          "Value": "32690"
         },
         {
           "Name": "ETag",
-          "Value": "\"6SA1PtJpw/FDZ95wn5jP57JrFBF5wuNnyaMSDCyYXjA=\""
+          "Value": "\"RpZfSSkwPnJBCUHp6P964HcbTcb60kSO2Dgo1pAoHs4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
+          "Value": "Sun, 09 Mar 2025 14:52:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11624,13 +11624,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pDCj1Dfd3WzfutroIzpAE6MwQ+fhHU4j1rS6aHUuwj8=\""
+          "Value": "W/\"fwxuhpLYB3gZ7JsJpWLW6EyqbgjKck/fet7+2JP0Sa0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8xzuyjnr69"
+          "Value": "37cfpyqsed"
         },
         {
           "Name": "label",
@@ -11638,13 +11638,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pDCj1Dfd3WzfutroIzpAE6MwQ+fhHU4j1rS6aHUuwj8="
+          "Value": "sha256-fwxuhpLYB3gZ7JsJpWLW6EyqbgjKck/fet7+2JP0Sa0="
         }
       ]
     },
     {
-      "Route": "_framework/CarRentalUI.8xzuyjnr69.pdb.gz",
-      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/6ml0hgllle-8xzuyjnr69.gz",
+      "Route": "_framework/CarRentalUI.37cfpyqsed.pdb.gz",
+      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/6ml0hgllle-37cfpyqsed.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11653,7 +11653,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "31900"
+          "Value": "32690"
         },
         {
           "Name": "Content-Type",
@@ -11661,11 +11661,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6SA1PtJpw/FDZ95wn5jP57JrFBF5wuNnyaMSDCyYXjA=\""
+          "Value": "\"RpZfSSkwPnJBCUHp6P964HcbTcb60kSO2Dgo1pAoHs4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
+          "Value": "Sun, 09 Mar 2025 14:52:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11683,7 +11683,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8xzuyjnr69"
+          "Value": "37cfpyqsed"
         },
         {
           "Name": "label",
@@ -11691,168 +11691,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6SA1PtJpw/FDZ95wn5jP57JrFBF5wuNnyaMSDCyYXjA="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/CarRentalUI.noiurdznie.wasm",
-      "AssetFile": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/CarRentalUI.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "57109"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6QY762MYIOfBIxarlPEzA3POHO77jGlITn13Ziwt4NY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "noiurdznie"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/CarRentalUI.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6QY762MYIOfBIxarlPEzA3POHO77jGlITn13Ziwt4NY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/CarRentalUI.noiurdznie.wasm",
-      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/9lq8wfc9ph-noiurdznie.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000048167237"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "20760"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0fKNG3NQFkDl1qdxorCN4lpB84CN9bz/SRzA3hfftVQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"6QY762MYIOfBIxarlPEzA3POHO77jGlITn13Ziwt4NY=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "noiurdznie"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/CarRentalUI.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6QY762MYIOfBIxarlPEzA3POHO77jGlITn13Ziwt4NY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/CarRentalUI.noiurdznie.wasm.gz",
-      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/9lq8wfc9ph-noiurdznie.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "20760"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0fKNG3NQFkDl1qdxorCN4lpB84CN9bz/SRzA3hfftVQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "noiurdznie"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/CarRentalUI.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0fKNG3NQFkDl1qdxorCN4lpB84CN9bz/SRzA3hfftVQ="
+          "Value": "sha256-RpZfSSkwPnJBCUHp6P964HcbTcb60kSO2Dgo1pAoHs4="
         }
       ]
     },
@@ -11867,7 +11706,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "40848"
+          "Value": "41708"
         },
         {
           "Name": "Content-Type",
@@ -11875,11 +11714,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pDCj1Dfd3WzfutroIzpAE6MwQ+fhHU4j1rS6aHUuwj8=\""
+          "Value": "\"fwxuhpLYB3gZ7JsJpWLW6EyqbgjKck/fet7+2JP0Sa0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
+          "Value": "Sun, 09 Mar 2025 14:52:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11889,18 +11728,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pDCj1Dfd3WzfutroIzpAE6MwQ+fhHU4j1rS6aHUuwj8="
+          "Value": "sha256-fwxuhpLYB3gZ7JsJpWLW6EyqbgjKck/fet7+2JP0Sa0="
         }
       ]
     },
     {
       "Route": "_framework/CarRentalUI.pdb",
-      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/6ml0hgllle-8xzuyjnr69.gz",
+      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/6ml0hgllle-37cfpyqsed.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000031346980"
+          "Quality": "0.000030589459"
         }
       ],
       "ResponseHeaders": [
@@ -11910,15 +11749,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "31900"
+          "Value": "32690"
         },
         {
           "Name": "ETag",
-          "Value": "\"6SA1PtJpw/FDZ95wn5jP57JrFBF5wuNnyaMSDCyYXjA=\""
+          "Value": "\"RpZfSSkwPnJBCUHp6P964HcbTcb60kSO2Dgo1pAoHs4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
+          "Value": "Sun, 09 Mar 2025 14:52:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11938,19 +11777,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"pDCj1Dfd3WzfutroIzpAE6MwQ+fhHU4j1rS6aHUuwj8=\""
+          "Value": "W/\"fwxuhpLYB3gZ7JsJpWLW6EyqbgjKck/fet7+2JP0Sa0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pDCj1Dfd3WzfutroIzpAE6MwQ+fhHU4j1rS6aHUuwj8="
+          "Value": "sha256-fwxuhpLYB3gZ7JsJpWLW6EyqbgjKck/fet7+2JP0Sa0="
         }
       ]
     },
     {
       "Route": "_framework/CarRentalUI.pdb.gz",
-      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/6ml0hgllle-8xzuyjnr69.gz",
+      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/6ml0hgllle-37cfpyqsed.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11959,7 +11798,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "31900"
+          "Value": "32690"
         },
         {
           "Name": "Content-Type",
@@ -11967,11 +11806,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6SA1PtJpw/FDZ95wn5jP57JrFBF5wuNnyaMSDCyYXjA=\""
+          "Value": "\"RpZfSSkwPnJBCUHp6P964HcbTcb60kSO2Dgo1pAoHs4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
+          "Value": "Sun, 09 Mar 2025 14:52:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11989,7 +11828,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6SA1PtJpw/FDZ95wn5jP57JrFBF5wuNnyaMSDCyYXjA="
+          "Value": "sha256-RpZfSSkwPnJBCUHp6P964HcbTcb60kSO2Dgo1pAoHs4="
         }
       ]
     },
@@ -12004,7 +11843,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "57109"
+          "Value": "58645"
         },
         {
           "Name": "Content-Type",
@@ -12012,11 +11851,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6QY762MYIOfBIxarlPEzA3POHO77jGlITn13Ziwt4NY=\""
+          "Value": "\"ZzeYYltGsjNuNCuu1KVo+sqX5WkXl+v24SrvcMtXerE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
+          "Value": "Sun, 09 Mar 2025 14:52:46 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12026,18 +11865,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6QY762MYIOfBIxarlPEzA3POHO77jGlITn13Ziwt4NY="
+          "Value": "sha256-ZzeYYltGsjNuNCuu1KVo+sqX5WkXl+v24SrvcMtXerE="
         }
       ]
     },
     {
       "Route": "_framework/CarRentalUI.wasm",
-      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/9lq8wfc9ph-noiurdznie.gz",
+      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/9lq8wfc9ph-zltyhrv25q.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000048167237"
+          "Quality": "0.000047103156"
         }
       ],
       "ResponseHeaders": [
@@ -12047,15 +11886,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20760"
+          "Value": "21229"
         },
         {
           "Name": "ETag",
-          "Value": "\"0fKNG3NQFkDl1qdxorCN4lpB84CN9bz/SRzA3hfftVQ=\""
+          "Value": "\"smSp8f2OLKlrs+o3Ns5KNlvsGaVh9YhDxbBqfeiH4vk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
+          "Value": "Sun, 09 Mar 2025 14:52:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12075,19 +11914,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"6QY762MYIOfBIxarlPEzA3POHO77jGlITn13Ziwt4NY=\""
+          "Value": "W/\"ZzeYYltGsjNuNCuu1KVo+sqX5WkXl+v24SrvcMtXerE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6QY762MYIOfBIxarlPEzA3POHO77jGlITn13Ziwt4NY="
+          "Value": "sha256-ZzeYYltGsjNuNCuu1KVo+sqX5WkXl+v24SrvcMtXerE="
         }
       ]
     },
     {
       "Route": "_framework/CarRentalUI.wasm.gz",
-      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/9lq8wfc9ph-noiurdznie.gz",
+      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/9lq8wfc9ph-zltyhrv25q.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12096,7 +11935,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20760"
+          "Value": "21229"
         },
         {
           "Name": "Content-Type",
@@ -12104,11 +11943,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0fKNG3NQFkDl1qdxorCN4lpB84CN9bz/SRzA3hfftVQ=\""
+          "Value": "\"smSp8f2OLKlrs+o3Ns5KNlvsGaVh9YhDxbBqfeiH4vk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Mar 2025 23:29:09 GMT"
+          "Value": "Sun, 09 Mar 2025 14:52:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12126,7 +11965,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0fKNG3NQFkDl1qdxorCN4lpB84CN9bz/SRzA3hfftVQ="
+          "Value": "sha256-smSp8f2OLKlrs+o3Ns5KNlvsGaVh9YhDxbBqfeiH4vk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/CarRentalUI.zltyhrv25q.wasm",
+      "AssetFile": "/Users/erdem/CarRentalUI/bin/Debug/net9.0/wwwroot/_framework/CarRentalUI.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58645"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZzeYYltGsjNuNCuu1KVo+sqX5WkXl+v24SrvcMtXerE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 14:52:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zltyhrv25q"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/CarRentalUI.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZzeYYltGsjNuNCuu1KVo+sqX5WkXl+v24SrvcMtXerE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/CarRentalUI.zltyhrv25q.wasm",
+      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/9lq8wfc9ph-zltyhrv25q.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000047103156"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21229"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"smSp8f2OLKlrs+o3Ns5KNlvsGaVh9YhDxbBqfeiH4vk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 14:52:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ZzeYYltGsjNuNCuu1KVo+sqX5WkXl+v24SrvcMtXerE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zltyhrv25q"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/CarRentalUI.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZzeYYltGsjNuNCuu1KVo+sqX5WkXl+v24SrvcMtXerE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/CarRentalUI.zltyhrv25q.wasm.gz",
+      "AssetFile": "/Users/erdem/CarRentalUI/obj/Debug/net9.0/compressed/9lq8wfc9ph-zltyhrv25q.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"smSp8f2OLKlrs+o3Ns5KNlvsGaVh9YhDxbBqfeiH4vk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 14:52:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zltyhrv25q"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/CarRentalUI.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-smSp8f2OLKlrs+o3Ns5KNlvsGaVh9YhDxbBqfeiH4vk="
         }
       ]
     },

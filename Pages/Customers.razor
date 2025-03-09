@@ -1,0 +1,159 @@
+@page "/customers"
+@using MudBlazor
+@inject HttpClient Http
+
+<PageTitle>Customers</PageTitle>
+
+<MudPaper Class="pa-4" Elevation="2">
+    <MudText Typo="Typo.h5" GutterBottom="true">Customers</MudText>
+
+    <!-- Button to start adding a new customer -->
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="mb-2"
+               OnClick="NewCustomer">
+        Add Customer
+    </MudButton>
+
+    @if (customers is null)
+    {
+        <MudProgressCircular Indeterminate="true" Color="Color.Primary" />
+    }
+    else if (!customers.Any())
+    {
+        <MudText>No customers found.</MudText>
+    }
+    else
+    {
+        <MudTable Items="customers" Dense="true" Hover="true">
+            <HeaderContent>
+                <MudTh>ID</MudTh>
+                <MudTh>Name</MudTh>
+                <MudTh>Actions</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="ID">@context.Id</MudTd>
+                <MudTd DataLabel="Name">@context.Name</MudTd>
+                <MudTd>
+                    <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                   Color="Color.Primary"
+                                   OnClick="@(() => StartEditCustomer(context))" />
+                    <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                                   Color="Color.Error"
+                                   OnClick="@(() => DeleteCustomer(context.Id))" />
+                </MudTd>
+            </RowTemplate>
+        </MudTable>
+    }
+
+    <!-- Divider above the form -->
+    @if (selectedCustomer != null)
+    {
+        <MudDivider Class="my-2" />
+        <MudText Typo="Typo.h6">
+            @(selectedCustomer.Id == 0 ? "Add New Customer" : "Edit Customer")
+        </MudText>
+
+        <!-- Simple inline form for adding or editing a customer -->
+        <MudTextField Label="Customer Name"
+                      @bind-Value="selectedCustomer.Name"
+                      Class="mb-2" />
+
+        <div>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="SaveCustomer" Class="mr-2">
+                @(selectedCustomer.Id == 0 ? "Create" : "Update")
+            </MudButton>
+            <MudButton Variant="Variant.Outlined" Color="Color.Secondary" OnClick="CancelEdit">
+                Cancel
+            </MudButton>
+        </div>
+    }
+</MudPaper>
+
+@code {
+    private List<Customer>? customers;
+    private Customer? selectedCustomer;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCustomers();
+    }
+
+    private async Task LoadCustomers()
+    {
+        // GET /customers from your API
+        customers = await Http.GetFromJsonAsync<List<Customer>>("customers");
+    }
+
+    // Create an empty Customer so the form shows up for "Add"
+    private void NewCustomer()
+    {
+        selectedCustomer = new Customer();
+    }
+
+    // Copy the existing customer's data so we can edit in the form
+    private void StartEditCustomer(Customer customer)
+    {
+        selectedCustomer = new Customer
+        {
+            Id = customer.Id,
+            Name = customer.Name
+        };
+    }
+
+    private async Task SaveCustomer()
+    {
+        if (selectedCustomer == null) return;
+
+        HttpResponseMessage response;
+        if (selectedCustomer.Id > 0)
+        {
+            // Existing customer => PUT /customers/{id} with API key header
+            var request = new HttpRequestMessage(HttpMethod.Put, $"customers/{selectedCustomer.Id}");
+            request.Content = JsonContent.Create(selectedCustomer);
+            request.Headers.Add("X-API-Key", "mysecret123");
+            response = await Http.SendAsync(request);
+        }
+        else
+        {
+            // New customer => POST /customers (assuming API key is not required here)
+            response = await Http.PostAsJsonAsync("customers", selectedCustomer);
+        }
+
+        if (response.IsSuccessStatusCode)
+        {
+            // Refresh list, hide the form
+            await LoadCustomers();
+            selectedCustomer = null;
+        }
+        else
+        {
+            Console.WriteLine("Error saving customer");
+        }
+    }
+
+    private void CancelEdit()
+    {
+        selectedCustomer = null;
+    }
+
+    private async Task DeleteCustomer(int id)
+    {
+        var request = new HttpRequestMessage(HttpMethod.Delete, $"customers/{id}");
+        request.Headers.Add("X-API-Key", "mysecret123");
+        var response = await Http.SendAsync(request);
+        if (response.IsSuccessStatusCode)
+        {
+            await LoadCustomers();
+        }
+        else
+        {
+            Console.WriteLine("Error deleting customer");
+        }
+    }
+
+    // Matches your API's shape for a customer
+    public class Customer
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+    }
+}

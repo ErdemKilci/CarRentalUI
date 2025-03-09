@@ -1,0 +1,155 @@
+@page "/cars"
+@using MudBlazor
+@inject HttpClient Http
+
+<PageTitle>Cars</PageTitle>
+
+<MudPaper Class="pa-4" Elevation="2">
+    <MudText Typo="Typo.h3" Class="mb-2">Cars</MudText>
+
+    <!-- Button to trigger the add car form -->
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="mb-2"
+               OnClick="NewCar">
+        Add Car
+    </MudButton>
+
+    @if (cars is null)
+    {
+        <MudProgressCircular Indeterminate="true" Color="Color.Primary" />
+    }
+    else if (!cars.Any())
+    {
+        <MudText>No cars found.</MudText>
+    }
+    else
+    {
+        <MudTable Items="cars" Dense="true" Hover="true">
+            <HeaderContent>
+                <MudTh>ID</MudTh>
+                <MudTh>Model</MudTh>
+                <MudTh>Actions</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="ID">@context.Id</MudTd>
+                <MudTd DataLabel="Model">@context.Model</MudTd>
+                <MudTd>
+                    <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                   Color="Color.Primary"
+                                   OnClick="@(() => StartEditCar(context))" />
+                    <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                                   Color="Color.Error"
+                                   OnClick="@(() => DeleteCar(context.Id))" />
+                </MudTd>
+            </RowTemplate>
+        </MudTable>
+    }
+
+    <!-- Inline form for adding/editing a car -->
+    @if (selectedCar != null)
+    {
+        <MudDivider Class="my-2" />
+        <MudText Typo="Typo.h6">
+            @(selectedCar.Id == 0 ? "Add New Car" : "Edit Car")
+        </MudText>
+
+        <MudTextField Label="Car Model" @bind-Value="selectedCar.Model" Class="mb-2" />
+
+        <div>
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="SaveCar" Class="mr-2">
+                @(selectedCar.Id == 0 ? "Create" : "Update")
+            </MudButton>
+            <MudButton Variant="Variant.Outlined" Color="Color.Secondary" OnClick="CancelEdit">
+                Cancel
+            </MudButton>
+        </div>
+    }
+</MudPaper>
+
+@code {
+    private List<Car>? cars;
+    private Car? selectedCar;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadCars();
+    }
+
+    private async Task LoadCars()
+    {
+        cars = await Http.GetFromJsonAsync<List<Car>>("cars");
+    }
+
+    // Show form for adding a new car
+    private void NewCar()
+    {
+        selectedCar = new Car();
+    }
+
+    // Populate the form for editing an existing car
+    private void StartEditCar(Car car)
+    {
+        selectedCar = new Car
+        {
+            Id = car.Id,
+            Model = car.Model
+        };
+    }
+
+    // Save the car (either add or update)
+    private async Task SaveCar()
+    {
+        if (selectedCar == null) return;
+
+        HttpResponseMessage response;
+        if (selectedCar.Id > 0)
+        {
+            // Update existing car (PUT /cars/{id}) with API key header
+            var request = new HttpRequestMessage(HttpMethod.Put, $"cars/{selectedCar.Id}");
+            request.Content = JsonContent.Create(selectedCar);
+            request.Headers.Add("X-API-Key", "mysecret123");
+            response = await Http.SendAsync(request);
+        }
+        else
+        {
+            // Add new car (POST /cars)
+            response = await Http.PostAsJsonAsync("cars", selectedCar);
+        }
+
+        if (response.IsSuccessStatusCode)
+        {
+            await LoadCars();
+            selectedCar = null;
+        }
+        else
+        {
+            Console.WriteLine("Error saving car");
+        }
+    }
+
+    private void CancelEdit()
+    {
+        selectedCar = null;
+    }
+
+    // Delete car with API key header (DELETE /cars/{id})
+    private async Task DeleteCar(int id)
+    {
+        var request = new HttpRequestMessage(HttpMethod.Delete, $"cars/{id}");
+        request.Headers.Add("X-API-Key", "mysecret123");
+        var response = await Http.SendAsync(request);
+        if (response.IsSuccessStatusCode)
+        {
+            await LoadCars();
+        }
+        else
+        {
+            Console.WriteLine("Error deleting car");
+        }
+    }
+
+    public class Car
+    {
+        public int Id { get; set; }
+        public string? Model { get; set; }
+    }
+}

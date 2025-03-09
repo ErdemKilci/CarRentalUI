@@ -1,0 +1,116 @@
+@page "/assign"
+@using MudBlazor
+@inject HttpClient Http
+
+<PageTitle>Assign Rental</PageTitle>
+
+<MudPaper Class="pa-4" Elevation="2">
+    <MudText Typo="Typo.h3" Class="mb-2">Assign Car to Customer</MudText>
+
+    @if (!string.IsNullOrWhiteSpace(StatusMessage))
+    {
+        <MudAlert Severity="@AlertSeverity" Closeable="true">@StatusMessage</MudAlert>
+    }
+
+    <MudForm @ref="rentalForm" OnValidSubmit="HandleValidSubmit">
+        <MudTextField Label="Customer ID" @bind-Value="rental.CustomerId" Required="true" />
+        <MudTextField Label="Car ID" @bind-Value="rental.CarId" Required="true" />
+
+        <MudText Typo="Typo.subtitle2" Class="mt-2">Rental Start</MudText>
+        <MudDatePicker Label="Start Date" @bind-Date="rentalStartDate" Required="true" />
+        <MudTimePicker Label="Start Time" @bind-Time="rentalStartTime" Required="true" />
+
+        <MudText Typo="Typo.subtitle2" Class="mt-2">Rental End</MudText>
+        <MudDatePicker Label="End Date" @bind-Date="rentalEndDate" />
+        <MudTimePicker Label="End Time" @bind-Time="rentalEndTime" />
+
+        <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="mt-2" OnClick="@SubmitForm">
+            Assign
+        </MudButton>
+    </MudForm>
+</MudPaper>
+
+@code {
+    private MudForm? rentalForm;
+    private RentalModel rental = new RentalModel();
+
+    // For Rental Start
+    private DateTime? rentalStartDate;
+    private TimeSpan? rentalStartTime;
+
+    // For Rental End (optional)
+    private DateTime? rentalEndDate;
+    private TimeSpan? rentalEndTime;
+
+    private string StatusMessage = string.Empty;
+    private Severity AlertSeverity = Severity.Info;
+
+    private async Task HandleValidSubmit()
+    {
+        await SubmitForm();
+    }
+
+    private async Task SubmitForm()
+    {
+        // Combine the selected date and time for Rental Start
+        if (rentalStartDate.HasValue && rentalStartTime.HasValue)
+        {
+            rental.RentalStart = rentalStartDate.Value.Date + rentalStartTime.Value;
+        }
+        else
+        {
+            // Fallback to current time if not provided
+            rental.RentalStart = DateTime.UtcNow;
+        }
+
+        // Combine the selected date and time for Rental End (if provided)
+        if (rentalEndDate.HasValue && rentalEndTime.HasValue)
+        {
+            rental.RentalEnd = rentalEndDate.Value.Date + rentalEndTime.Value;
+        }
+        else
+        {
+            rental.RentalEnd = null;
+        }
+
+        try
+        {
+            var response = await Http.PostAsJsonAsync("rentals", rental);
+            if (response.IsSuccessStatusCode)
+            {
+                StatusMessage = "Car assigned successfully!";
+                AlertSeverity = Severity.Success;
+            }
+            else if (response.StatusCode == System.Net.HttpStatusCode.Conflict)
+            {
+                StatusMessage = await response.Content.ReadAsStringAsync();
+                AlertSeverity = Severity.Error;
+            }
+            else if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+            {
+                StatusMessage = await response.Content.ReadAsStringAsync();
+                AlertSeverity = Severity.Error;
+            }
+            else
+            {
+                StatusMessage = $"Error {response.StatusCode}: " + await response.Content.ReadAsStringAsync();
+                AlertSeverity = Severity.Error;
+            }
+        }
+        catch (Exception ex)
+        {
+            StatusMessage = "Exception: " + ex.Message;
+            AlertSeverity = Severity.Error;
+        }
+    }
+
+    // Model matching the API's Rental structure
+    public class RentalModel
+    {
+        public int Id { get; set; }
+        public int CustomerId { get; set; }
+        public int CarId { get; set; }
+        public DateTime RentalStart { get; set; }
+        public DateTime? RentalEnd { get; set; }
+    }
+}

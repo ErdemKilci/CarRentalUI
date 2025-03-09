@@ -1,0 +1,53 @@
+@page "/rentals"
+@using MudBlazor
+@inject HttpClient Http
+
+<MudPaper Class="pa-4" Elevation="2">
+    <MudText Typo="Typo.h3" Class="mb-2">Active Rentals</MudText>
+
+    @if (rentals is null)
+    {
+        <MudProgressCircular Indeterminate="true" Color="Color.Primary" />
+    }
+    else if (!rentals.Any())
+    {
+        <MudText>No active rentals found.</MudText>
+    }
+    else
+    {
+        <MudTable Items="rentals" Dense="true" Hover="true">
+            <HeaderContent>
+                <MudTh>ID</MudTh>
+                <MudTh>Customer ID</MudTh>
+                <MudTh>Car ID</MudTh>
+                <MudTh>Start</MudTh>
+                <MudTh>End</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="ID">@context.Id</MudTd>
+                <MudTd DataLabel="Customer">@context.CustomerId</MudTd>
+                <MudTd DataLabel="Car">@context.CarId</MudTd>
+                <MudTd DataLabel="Start">@context.RentalStart</MudTd>
+                <MudTd DataLabel="End">@context.RentalEnd?.ToString()</MudTd>
+            </RowTemplate>
+        </MudTable>
+    }
+</MudPaper>
+
+@code {
+    private List<Rental>? rentals;
+
+    protected override async Task OnInitializedAsync()
+    {
+        rentals = await Http.GetFromJsonAsync<List<Rental>>("rentals/all");
+    }
+
+    public class Rental
+    {
+        public int Id { get; set; }
+        public int CustomerId { get; set; }
+        public int CarId { get; set; }
+        public DateTime RentalStart { get; set; }
+        public DateTime? RentalEnd { get; set; }
+    }
+}

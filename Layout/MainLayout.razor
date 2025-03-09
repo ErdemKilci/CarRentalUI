@@ -1,0 +1,51 @@
+﻿@inherits LayoutComponentBase
+@using MudBlazor
+@inject NavigationManager Nav
+
+<MudLayout>
+    <MudAppBar Elevation="4" Color="Color.Warning">
+        <MudIcon Icon="@Icons.Material.TwoTone.Garage"  />
+
+        <MudSpacer />
+        <MudText Typo="Typo.h4" Class="my-branding-text">Car Rental Grimstad</MudText>
+        <MudSpacer />
+
+        <MudIconButton Icon="@Icons.Material.TwoTone.Home"
+                       OnClick="@(() => Nav.NavigateTo("/"))"
+                       Color="Color.Inherit" />
+        <MudIconButton Icon="@Icons.Material.TwoTone.EmojiPeople"
+                       OnClick="@(() => Nav.NavigateTo("/customers"))"
+                       Color="Color.Inherit" />
+        <MudIconButton Icon="@Icons.Material.TwoTone.DirectionsCar"
+                       OnClick="@(() => Nav.NavigateTo("/cars"))"
+                       Color="Color.Inherit" />
+        <MudIconButton Icon="@Icons.Material.TwoTone.Event"
+                       OnClick="@(() => Nav.NavigateTo("/rentals"))"
+                       Color="Color.Inherit" />
+        <MudIconButton Icon="@Icons.Material.TwoTone.CarRental"
+                        OnClick="@(() => Nav.NavigateTo("/assign"))"
+                        Color="Color.Inherit" />
+
+    </MudAppBar>
+
+    <!-- Add top margin so the content isn't too close to the bar -->
+    <MudContainer Class="pa-4 mt-4">
+        @Body
+    </MudContainer>
+
+    <MudDialogProvider />
+    <MudSnackbarProvider />
+    <MudPopoverProvider />
+</MudLayout>
+
+<!-- alternative font
+<style>
+
+    .comfortaa-custom {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    }
+</style>
+-->

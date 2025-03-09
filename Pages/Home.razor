@@ -1,0 +1,49 @@
+﻿@page "/"
+@using MudBlazor
+
+<PageTitle>Home</PageTitle>
+
+<MudContainer Class="pa-4">
+    <MudCard Style="max-width: 800px; margin: 0 auto;">
+        <MudCardContent>
+            <!-- Welcome Section -->
+            <MudText Typo="Typo.h4" GutterBottom="true" Align="Align.Center">
+                Welcome to Car Rental Grimstad!
+            </MudText>
+            <MudDivider Class="my-2" />
+            <MudText Typo="Typo.subtitle1" Align="Align.Center">
+                
+            </MudText>
+
+            <!-- Key Features Section -->
+            <MudText Typo="Typo.h6" Class="mt-4">
+                Key Features:
+            </MudText>
+            <MudList Dense="true" T="string">
+                <MudListItem T="string">Customer management (add, edit, delete customers)</MudListItem>
+                <MudListItem T="string">Car management with real-time updates</MudListItem>
+                <MudListItem T="string">Rental assignment with overlapping validation</MudListItem>
+                <MudListItem T="string">Modern, responsive UI built with Blazor WebAssembly and MudBlazor</MudListItem>
+            </MudList>
+
+            <!-- How It Works Section -->
+            <MudText Typo="Typo.h6" Class="mt-4">
+                How It Works:
+            </MudText>
+            <MudText Typo="Typo.body1">
+                CarRentalUI enables you to manage customers and cars effortlessly. The rental assignment feature ensures that each car is booked for the correct time period without conflicts. Actions like adding, updating, or deleting records are performed with just a few clicks, making the process both efficient and error-free.
+            </MudText>
+
+            <!-- Benefits Section -->
+            <MudText Typo="Typo.h6" Class="mt-4">
+                Benefits:
+            </MudText>
+            <MudText Typo="Typo.body1">
+                - Increase operational efficiency<br />
+                - Reduce booking errors<br />
+                - Enhance user experience with a modern interface<br />
+                - Leverage robust .NET technologies for performance and reliability
+            </MudText>
+        </MudCardContent>
+    </MudCard>
+</MudContainer>
